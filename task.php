@@ -2,7 +2,7 @@
 // 課題の回答は このファイル をご利用下さい。
 // 回答の出力を確認される際は，「php task.php」をターミナルから実行して下さい。
 
-print('<br>' . "#####q1#####" . PHP_EOL) . '<br>';
+print("#####q1#####" . PHP_EOL);
 $names = ["田中", "佐藤", "佐々木", "高橋"];
 
 // 以下に回答を記載
@@ -10,7 +10,7 @@ array_push($names,"斉藤");
 print_r($names);
 echo PHP_EOL;
 
-print('<br>' . "#####q2#####".PHP_EOL) . '<br>';
+print("#####q2#####".PHP_EOL);
 $array1 = ["dog", "cat", "fish"];
 $array2 = ["bird", "bat", "tiger"];
 
@@ -19,21 +19,28 @@ $array_merge = array_merge($array1, $array2);
 print_r($array_merge);
 echo PHP_EOL;
 
-print('<br>' . "#####q3#####".PHP_EOL) . '<br>';
+print("#####q3#####".PHP_EOL);
 $numbers = [1, 5, 8, 10, 2, 3, 2, 3, 1, 4, 5, 9];
 
 // 以下に回答を記載
+$number = 0;
+foreach ($numbers as $val){
+    if($val == 3){
+        $number++;
+    }
+}
+echo $number."回";
 
 echo PHP_EOL;
 
-print('<br>' . "#####q4#####".PHP_EOL) . '<br>';
+print("#####q4#####".PHP_EOL);
 $sports = ["サッカー", "フットサル", null, "野球", "バスケ", null, "バレー"];
 
 // 以下に回答を記載
 
 echo PHP_EOL;
 
-print('<br>' . "#####q5#####".PHP_EOL) . '<br>';
+print("#####q5#####".PHP_EOL);
 $array1 = [];
 $array2 = [1, 5, 8, 10];
 
@@ -41,14 +48,14 @@ $array2 = [1, 5, 8, 10];
 
 echo PHP_EOL;
 
-print('<br>' . "#####q6#####".PHP_EOL) . '<br>';
+print("#####q6#####".PHP_EOL);
 $numbers1 = [1, 2, 3, 4, 5];
 
 // 以下に回答を記載
 
 echo PHP_EOL;
 
-print('<br>' . "#####q7#####".PHP_EOL) . '<br>';
+print("#####q7#####".PHP_EOL);
 $array = ["1", "2", "3", "4", "5"];
 
 // 以下に回答を記載
@@ -58,7 +65,7 @@ var_dump($array);
 
 echo PHP_EOL;
 
-print('<br>' . "#####q8#####".PHP_EOL) . '<br>';
+print("#####q8#####".PHP_EOL);
 $programming_languages = ["php", "ruby", "python", "javascript"];
 
 // 以下に回答を記載
@@ -70,35 +77,35 @@ print_r($upper_case_programming_languages);
 
 echo PHP_EOL;
 
-print('<br>' . "#####q9#####".PHP_EOL) . '<br>';
+print("#####q9#####".PHP_EOL);
 $names = ["田中", "佐藤", "佐々木", "高橋"];
 
 // 以下に回答を記載
 
 echo PHP_EOL;
 
-print('<br>' . "#####q10#####".PHP_EOL) . '<br>';
+print("#####q10#####".PHP_EOL);
 $foods = ["いか", "たこ", "うに", "しゃけ", "うにぎり", "うに軍艦", "うに丼", "高級なうに"];
 
 // 以下に回答を記載
 
 echo PHP_EOL;
 
-print('<br>' . "#####q11#####".PHP_EOL) . '<br>';
+print("#####q11#####".PHP_EOL);
 $sports = ["サッカー", "バスケ", "野球", ["フットサル", "野球"], "水泳", "ハンドボール", ["卓球", "サッカー", "ボルダリング"]];
 
 // 以下に回答を記載
 
 echo PHP_EOL;
 
-print('<br>' . "#####q12#####".PHP_EOL) . '<br>';
+print("#####q12#####".PHP_EOL);
 $data = ["user" => ["name" => "satou", "age" => 33]];
 
 // 以下に回答を記載
 
 echo PHP_EOL;
 
-print('<br>' . "#####q13#####".PHP_EOL) . '<br>';
+print("#####q13#####".PHP_EOL);
 $user_data = ["name" => "神里", "age" => 31, "address" => "埼玉"];
 $update_data = ["age" => 32, "address" => "沖縄"];
 
@@ -106,14 +113,14 @@ $update_data = ["age" => 32, "address" => "沖縄"];
 
 echo PHP_EOL;
 
-print('<br>' . "#####q14#####".PHP_EOL) . '<br>';
+print("#####q14#####".PHP_EOL);
 $data = ["name" => "satou", "age" => 33, "address" => "saitama", "hobby" => "soccer", "email" => "hoge@fuga.com"];
 
 // 以下に回答を記載
 
 echo PHP_EOL;
 
-print('<br>' . "#####q15#####".PHP_EOL) . '<br>';
+print("#####q15#####".PHP_EOL);
 $data1 = ["name" => "saitou", "hobby" => "soccer", "age" => 33, "role" => "admin"];
 $data2 = ["name" => "yamada", "hobby" => "baseball", "role" => "normal"];
 
@@ -121,7 +128,7 @@ $data2 = ["name" => "yamada", "hobby" => "baseball", "role" => "normal"];
 
 echo PHP_EOL;
 
-print('<br>' . "#####q16#####".PHP_EOL) . '<br>';
+print("#####q16#####".PHP_EOL);
 $users = [
     ["name" => "satou", "age" => 22],
     ["name" => "yamada", "age" => 12],
@@ -133,7 +140,7 @@ $users = [
 
 echo PHP_EOL;
 
-print('<br>' . "#####q17#####".PHP_EOL) . '<br>';
+print("#####q17#####".PHP_EOL);
 class User
 {
 
@@ -145,12 +152,12 @@ $user1 = new User("神里", 32, "男");
 $user2 = new User("あじー", 32, "男");
 
 $user1->info();
-print("-------------".PHP_EOL) . '<br>';
+print("-------------".PHP_EOL);
 $user2->info();
 
 echo PHP_EOL;
 
-print('<br>' . "#####q18#####".PHP_EOL) . '<br>';
+print("#####q18#####".PHP_EOL);
 
 // コードを追加
 
@@ -162,7 +169,7 @@ $man2->introduce();
 
 echo PHP_EOL;
 
-print('<br>' . "#####q19#####".PHP_EOL) . '<br>';
+print("#####q19#####".PHP_EOL);
 class Item
 {
     // 以下を修正して下さい
@@ -176,11 +183,11 @@ class Item
 // 以下は変更しないで下さい
 
 $book = new Item("ゼロ秒思考");
-print($book->name.PHP_EOL) . '<br>';
+print($book->name.PHP_EOL);
 
 echo PHP_EOL;
 
-print('<br>' . "#####q20#####".PHP_EOL) . '<br>';
+print("#####q20#####".PHP_EOL);
 class Human
 {
 
