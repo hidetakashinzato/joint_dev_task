@@ -37,8 +37,7 @@ print("#####q4#####".PHP_EOL);
 $sports = ["サッカー", "フットサル", null, "野球", "バスケ", null, "バレー"];
 
 // 以下に回答を記載
-$sports = array_diff($sports,[null]);
-
+$unique = array_unique($sports);
 print_r($sports);
 echo PHP_EOL;
 
@@ -47,7 +46,13 @@ $array1 = [];
 $array2 = [1, 5, 8, 10];
 
 // 以下に回答を記載
+var_export(empty($arry1));
 
+if(empty($array2)){
+    echo "true";
+} else {
+    echo"false";
+}
 echo PHP_EOL;
 
 print("#####q6#####".PHP_EOL);
