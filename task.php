@@ -132,7 +132,7 @@ foreach ($sports as $key => $sport) {
 }
 
 $sports2 = array_unique($sports2);
-$sports2 = array_values($sports2);
+
 
 $sports3 = [];
 foreach ($sports2 as $key => $sport){
@@ -198,7 +198,7 @@ class User
 $user1 = new User("神里", 32, "男");
 $user2 = new User("あじー", 32, "男");
 
-$user1->info();
+/*$user1->info();
 print("-------------".PHP_EOL);
 $user2->info();
 
@@ -260,6 +260,6 @@ $humans = [$human1, $human2, $human3, $human4];
 
 foreach ($humans as $human) {
     $zoo->info_entry_fee($human);
-}
+}*/
 
 echo PHP_EOL;
