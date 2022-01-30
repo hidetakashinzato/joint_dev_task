@@ -202,7 +202,9 @@ $users = [
 ];
 
 // 以下に回答を記載
-
+foreach ($users as $key =>  $user) {
+    print_r('私の名前は'.$user['name'].'です。年齢は'.$user['age'].'歳です。'.PHP_EOL);
+}
 echo PHP_EOL;
 
 print("#####q17#####".PHP_EOL);
