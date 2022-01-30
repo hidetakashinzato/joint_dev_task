@@ -122,7 +122,27 @@ $sports = ["サッカー", "バスケ", "野球", ["フットサル", "野球"],
 
 // 以下に回答を記載
 $sports2 = [];
+foreach ($sports as $key => $sport) {
+    if (is_array($sport)){
 
+        $sports2 = array_merge($sports2,$sport);
+    } else {
+        $sports2[] = $sport;
+    }
+}
+
+$sports2 = array_unique($sports2);
+$sports2 = array_values($sports2);
+
+$sports3 = [];
+foreach ($sports2 as $key => $sport){
+    $number = $key + 1;
+    $sports3[] =  "No.".$number." ".$sport;
+}
+print_r("ユーザーの趣味一覧".PHP_EOL);
+foreach ($sports3 as $sport) {
+   print($sport.PHP_EOL);
+}
 echo PHP_EOL;
 
 print("#####q12#####".PHP_EOL);
