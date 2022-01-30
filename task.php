@@ -157,7 +157,9 @@ $user_data = ["name" => "神里", "age" => 31, "address" => "埼玉"];
 $update_data = ["age" => 32, "address" => "沖縄"];
 
 // 以下に回答を記載
+$user_data = array_merge($user_data, $update_data);
 
+print_r($user_data);
 echo PHP_EOL;
 
 print("#####q14#####".PHP_EOL);
