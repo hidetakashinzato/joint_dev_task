@@ -180,6 +180,16 @@ $data1 = ["name" => "saitou", "hobby" => "soccer", "age" => 33, "role" => "admin
 $data2 = ["name" => "yamada", "hobby" => "baseball", "role" => "normal"];
 
 // 以下に回答を記載
+if(array_key_exists('age', $data1)){
+    print_r('OK.'.PHP_EOL);
+} else {
+    print_r('NG.'.PHP_EOL);
+}
+if(array_key_exists('age', $data2)){
+    print_r('OK.'.PHP_EOL);
+} else {
+    print_r('NG.'.PHP_EOL);
+}
 
 echo PHP_EOL;
 
