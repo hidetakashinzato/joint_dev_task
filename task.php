@@ -149,7 +149,7 @@ print("#####q12#####".PHP_EOL);
 $data = ["user" => ["name" => "satou", "age" => 33]];
 
 // 以下に回答を記載
-
+print_r($data["user"]["name"]);
 echo PHP_EOL;
 
 print("#####q13#####".PHP_EOL);
