@@ -25,7 +25,7 @@ $numbers = [1, 5, 8, 10, 2, 3, 2, 3, 1, 4, 5, 9];
 // 以下に回答を記載
 $number = 0;
 foreach ($numbers as $val){
-    if($val == 3){
+    if($val === 3){
         $number++;
     }
 }
@@ -36,10 +36,11 @@ echo PHP_EOL;
 print("#####q4#####".PHP_EOL);
 $sports = ["サッカー", "フットサル", null, "野球", "バスケ", null, "バレー"];
 
+
 // 以下に回答を記載
-$unique = array_unique($sports);
+$sports = array_diff($sports,[null]);
+
 print_r($sports);
-echo PHP_EOL;
 
 print("#####q5#####".PHP_EOL);
 $array1 = [];
@@ -59,6 +60,12 @@ print("#####q6#####".PHP_EOL);
 $numbers1 = [1, 2, 3, 4, 5];
 
 // 以下に回答を記載
+$numbers2 = [];
+foreach ($numbers1 as $number) {
+    $number *= 10;
+    $numbers2[] = $number;
+}
+print_r($numbers2);
 
 echo PHP_EOL;
 
@@ -66,7 +73,7 @@ print("#####q7#####".PHP_EOL);
 $array = ["1", "2", "3", "4", "5"];
 
 // 以下に回答を記載
-
+$array = array_map('intval',$array);
 // 以下は変更しないで下さい
 var_dump($array);
 
@@ -76,32 +83,45 @@ print("#####q8#####".PHP_EOL);
 $programming_languages = ["php", "ruby", "python", "javascript"];
 
 // 以下に回答を記載
-
+$programming_languages = array_map("ucfirst",$programming_languages);
+$upper_case_programming_languages = array_map("strtoupper",$programming_languages);
 // 以下は変更しないで下さい
 print_r($programming_languages);
 echo PHP_EOL;
-print_r($upper_case_programming_languages);
 
+print_r($upper_case_programming_languages);
 echo PHP_EOL;
 
 print("#####q9#####".PHP_EOL);
 $names = ["田中", "佐藤", "佐々木", "高橋"];
 
 // 以下に回答を記載
-
+$names2 = [];
+foreach($names as $key => $name) {
+    $number = $key + 1;
+    $names2 [] = "会員No.".$number."".$name;
+}
+print_r($names2);
 echo PHP_EOL;
 
 print("#####q10#####".PHP_EOL);
 $foods = ["いか", "たこ", "うに", "しゃけ", "うにぎり", "うに軍艦", "うに丼", "高級なうに"];
 
 // 以下に回答を記載
-
+foreach($foods as $food) {
+    if(preg_match('/うに/',$food)){
+        print_r('好物です'.PHP_EOL);
+    }else{
+        print_r('まあまあ好きです'.PHP_EOL);
+    }
+}
 echo PHP_EOL;
 
 print("#####q11#####".PHP_EOL);
 $sports = ["サッカー", "バスケ", "野球", ["フットサル", "野球"], "水泳", "ハンドボール", ["卓球", "サッカー", "ボルダリング"]];
 
 // 以下に回答を記載
+$sports2 = [];
 
 echo PHP_EOL;
 
