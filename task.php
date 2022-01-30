@@ -166,6 +166,12 @@ print("#####q14#####".PHP_EOL);
 $data = ["name" => "satou", "age" => 33, "address" => "saitama", "hobby" => "soccer", "email" => "hoge@fuga.com"];
 
 // 以下に回答を記載
+$new_data = [];
+foreach($data as $data2){
+    array_push($new_data, $data2);
+}
+
+print_r($new_data);
 
 echo PHP_EOL;
 
