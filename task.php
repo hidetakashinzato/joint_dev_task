@@ -212,7 +212,7 @@ class User
 {
 
     // コードを追加
-private $nmae;
+private $name;
 private $age;
 private $gender;
 
@@ -273,7 +273,7 @@ class Item
 {
     // 以下を修正して下さい
 
-    protected $name;
+    public $name;
 
     function __construct($book_name){
         $this->name = $book_name;
